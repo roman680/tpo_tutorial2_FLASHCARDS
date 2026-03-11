@@ -4,6 +4,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class FlashCardService {
-    public void addWord() {
+    public void addWord(String polish, String english, String german) {
+    }
+
+    public void displayAll() {
     }
 }
