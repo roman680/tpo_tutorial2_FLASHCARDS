@@ -1,4 +1,4 @@
-package pl.edu.pja.tpo2.flashcardsapp;
+package pl.edu.pja.tpo02.flashcardsapp;
 
 public class Entry {
     private String polish;

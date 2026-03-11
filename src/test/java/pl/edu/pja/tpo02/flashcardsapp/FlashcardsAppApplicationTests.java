@@ -1,4 +1,4 @@
-package pl.edu.pja.tpo2.flashcardsapp;
+package pl.edu.pja.tpo02.flashcardsapp;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,9 +1,8 @@
-package pl.edu.pja.tpo2.flashcardsapp;
+package pl.edu.pja.tpo02.flashcardsapp;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 @Component
@@ -23,7 +22,8 @@ public class FlashcardsController implements CommandLineRunner {
 
     private void startMenu() {
         Scanner scanner = new Scanner(System.in);
-        while (true) {
+        boolean menuStatus = true;
+        while (menuStatus) {
             System.out.println();
             System.out.println("------ MENU ------");
             System.out.println("1. Add new word");
@@ -45,6 +45,7 @@ public class FlashcardsController implements CommandLineRunner {
                     startTest();
                 case "4":
                     System.out.println("Bye");
+                    menuStatus = false;
                     break;
                 default:
                     System.out.println("Invalid input, try again");
