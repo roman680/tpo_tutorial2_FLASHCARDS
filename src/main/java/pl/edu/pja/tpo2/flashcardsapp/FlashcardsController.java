@@ -8,12 +8,6 @@ import java.util.Scanner;
 @Component
 public class FlashcardsController implements CommandLineRunner {
 
-    private final Scanner scanner;
-
-    public FlashcardsController(Scanner scanner) {
-        this.scanner = scanner;
-    }
-
 
     @Override
     public void run(String... args) throws Exception {
@@ -21,6 +15,7 @@ public class FlashcardsController implements CommandLineRunner {
     }
 
     private void startMenu() {
+        Scanner scanner = new Scanner(System.in);
         while (true) {
             System.out.println();
             System.out.println("------ MENU ------");
@@ -28,6 +23,9 @@ public class FlashcardsController implements CommandLineRunner {
             System.out.println("2. Display all words");
             System.out.println("3. Start test");
             System.out.println("4. Quit");
+            System.out.println("------------------");
+            System.out.println();
+            System.out.println("Choose your option: ");
 
             String usersChoice = scanner.nextLine();
         }
